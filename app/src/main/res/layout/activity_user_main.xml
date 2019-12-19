@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_user_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A1D55"
+        tools:context=".activity.UserMainActivity">
+
+    <ImageView
+            android:id="@+id/user_main_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:srcCompat="@drawable/main_user_bg"
+            tools:ignore="ContentDescription" />
+
+    <ImageView
+            tools:ignore="ContentDescription"
+            android:id="@+id/top_left_user_bg"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:scaleType="fitEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/top_left_oval" />
+
+    <ImageView
+            tools:ignore="ContentDescription"
+            android:id="@+id/top_left_user_icon"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_left_user_bg"
+            app:layout_constraintEnd_toEndOf="@+id/top_left_user_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user_main_ic_24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="54dp" />
+
+    <TextView
+            android:id="@+id/main_user_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            tools:text="Alexzander Purwoko Widiantoro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/main_user_time"
+            app:layout_constraintStart_toEndOf="@+id/top_left_user_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/main_user_tps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="XII TKJ 1 - TPS 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/main_user_time"
+            app:layout_constraintStart_toStartOf="@+id/main_user_title"
+            app:layout_constraintTop_toBottomOf="@+id/main_user_title" />
+
+    <TextView
+            android:id="@+id/main_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            tools:text="00:00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+            android:id="@+id/main_user_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/main_user_text_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/user_main_bg"
+            app:layout_constraintTop_toBottomOf="@+id/main_user_text_title">
+
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/main_user_text_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_bottom"
+            android:backgroundTint="#141414"
+            tools:text="TextView"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/main_user_fab_submit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_submit"
+            app:backgroundTint="@android:color/black"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@id/main_user_text_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_user_frame"
+            app:layout_constraintVertical_bias="1.05"
+            app:maxImageSize="30dp" />
+
+    <TextView
+            android:id="@+id/main_user_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/title_on_center"
+            android:elevation="8dp"
+            tools:text="Pemilu Wakil Ketua OSIS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/user_main_bg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

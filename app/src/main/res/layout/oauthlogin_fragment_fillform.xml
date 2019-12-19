@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/oauthlogin_id_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/oauthlogin_dimen_username_marginELSR"
+            android:layout_marginLeft="@dimen/oauthlogin_dimen_username_marginELSR"
+            android:layout_marginTop="@dimen/oauthlogin_dimen_username_marginTop"
+            android:layout_marginEnd="@dimen/oauthlogin_dimen_username_marginELSR"
+            android:layout_marginRight="@dimen/oauthlogin_dimen_username_marginELSR"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText"
+            android:importantForAutofill="no" />
+
+    <EditText
+            android:id="@+id/oauthlogin_id_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oauthlogin_dimen_password_marginTop"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/oauthlogin_id_username"
+            app:layout_constraintStart_toStartOf="@+id/oauthlogin_id_username"
+            app:layout_constraintTop_toBottomOf="@+id/oauthlogin_id_username"
+            tools:ignore="HardcodedText"
+            android:importantForAutofill="no" />
+
+    <Button
+            android:id="@+id/oauthlogin_id_submit_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oauthlogin_dimen_loginbtn_marginTop"
+            android:background="@drawable/ic_button_login"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/oauthlogin_id_password"
+            app:layout_constraintStart_toStartOf="@+id/oauthlogin_id_password"
+            app:layout_constraintTop_toBottomOf="@+id/oauthlogin_id_password"
+            tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

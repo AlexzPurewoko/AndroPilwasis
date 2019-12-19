@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/title_home" />
+
+    <item
+            android:id="@+id/navigation_realcount"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/realcount" />
+
+    <item
+            android:id="@+id/navigation_user"
+            android:icon="@drawable/ic_user"
+            android:title="@string/user" />
+
+    <item
+            android:id="@+id/navigation_candidates"
+            android:icon="@drawable/candidates_24dp"
+            android:title="@string/candidates" />
+</menu>

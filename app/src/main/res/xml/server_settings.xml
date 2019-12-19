@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            android:title="Server Settings"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false">
+
+        <ListPreference
+                android:defaultValue="@string/server_protocol_def"
+                android:entries="@array/server_protocol_entries"
+                android:entryValues="@array/server_protocol_values"
+                android:key="@string/server_protocol_key"
+                android:summary="@string/server_protocol_desc"
+                android:title="@string/server_protocol_title"
+                app:iconSpaceReserved="false" />
+        <EditTextPreference
+                android:defaultValue="@string/server_url_def"
+                android:key="@string/server_url_key"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:summary="@string/server_url_desc"
+                android:title="@string/server_url_title"
+                app:iconSpaceReserved="false" />
+        <ListPreference
+                android:defaultValue="@string/server_timeout_milliseconds_def"
+                android:entries="@array/server_timeout_milliseconds_entries"
+                android:entryValues="@array/server_timeout_milliseconds_values"
+                android:key="@string/server_timeout_milliseconds_key"
+                android:summary="@string/server_timeout_milliseconds_desc"
+                android:title="@string/server_timeout_milliseconds_title"
+                app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

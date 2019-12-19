@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#304FFE"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="6dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/dashboard_progress_user_election"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cpb_background_progressbar_color="#81A2A2A2"
+                            app:cpb_background_progressbar_width="5dp"
+                            app:cpb_progress="40"
+                            app:cpb_progress_direction="to_right"
+                            app:cpb_progress_max="100"
+                            app:cpb_progressbar_color="#FFFFFF"
+                            app:cpb_progressbar_width="6dp"
+                            app:cpb_round_border="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/dashboard_progress_user_election_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/dashboard_progress_user_election"
+                            app:layout_constraintEnd_toEndOf="@+id/dashboard_progress_user_election"
+                            app:layout_constraintStart_toStartOf="@+id/dashboard_progress_user_election"
+                            app:layout_constraintTop_toTopOf="@+id/dashboard_progress_user_election"
+                            tools:text="40%" />
+
+                    <TextView
+                            android:id="@+id/dashboard_text_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/dashboard_progress_user_election"
+                            tools:text="4 dari 10" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            tools:text="@string/user_voted"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/dashboard_text_user" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#D50000"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="6dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/dashboard_progress_user_deactivated"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cpb_background_progressbar_color="#81A2A2A2"
+                            app:cpb_background_progressbar_width="5dp"
+                            app:cpb_progress="20"
+                            app:cpb_progress_direction="to_right"
+                            app:cpb_progress_max="100"
+                            app:cpb_progressbar_color="#FFFFFF"
+                            app:cpb_progressbar_width="6dp"
+                            app:cpb_round_border="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/dashboard_progress_user_deactivated_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/dashboard_progress_user_deactivated"
+                            app:layout_constraintEnd_toEndOf="@+id/dashboard_progress_user_deactivated"
+                            app:layout_constraintStart_toStartOf="@+id/dashboard_progress_user_deactivated"
+                            app:layout_constraintTop_toTopOf="@+id/dashboard_progress_user_deactivated"
+                            tools:text="20%" />
+
+                    <TextView
+                            android:id="@+id/dashboard_text_user_deactivated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/dashboard_progress_user_deactivated"
+                            tools:text="2 dari 10" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/user_has_deactivated"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/dashboard_text_user_deactivated" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#304FFE"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+            <TextView
+                    android:id="@+id/dashboard_total_candidates"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    tools:text="4 Calon Terdaftar" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/ongoing_activities"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dashboard_ongoing_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/list_ongoing_users" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

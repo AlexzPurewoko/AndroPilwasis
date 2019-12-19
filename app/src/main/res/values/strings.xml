@@ -1,0 +1,73 @@
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<resources>
+    <string name="app_name" translatable="false">AndroPilwasis</string>
+    <string name="title_home" translatable="false">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="realcount" translatable="false">RealCount</string>
+    <string name="user">User</string>
+    <string name="candidates">Candidates</string>
+
+
+    <string name="dialog_out">Are you sure to logout?</string>
+    <string name="logout">Logout</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error" translatable="false">Error!</string>
+
+
+    <string name="alert">Alert!</string>
+    <string name="restart">Restart!</string>
+    <string name="dialog_user_not_re_election">"I'm sorry, the user cannot doing re-election after they've been selected the candidates!"</string>
+
+    <string name="dialog_cannot_tell_server">"Cannot tell the server, change the server addresses or consultate with nearest admin!"</string>
+    <string name="configure">Configure</string>
+    <string name="dialog_user_not_activated">"User not activated, Consultate to nearest admin!"</string>
+    <string name="okay">Okay</string>
+    <string name="dialog_cannot_retrieve_conf">"Cannot retrieve configuration from server!"</string>
+    <string name="dialog_title_admin_not_election">"You as admin not voted yet!"</string>
+    <string name="dialog_message_admin_not_election">"You is an Admin.\nSelect option whether you want to do election or log-in into admin mode. If you don't vote, it will be counted as Golput"</string>
+    <string name="election_first">"Vote First"</string>
+    <string name="admin_mode_login">"Login as Admin"</string>
+    <string name="dialog_thanks_vote">"Thanks for doing vote. Click logout for continue!"</string>
+    <string name="display_cannot_revote">"Yeah… You cannot re-vote"</string>
+    <string name="display_logout_force">"Logout please! if not, auto log-out!"</string>
+    <string name="display_timeout">"I'm sorry, the time has out! Please sign-out"</string>
+    <string name="list_candidates">List of Registerred Candidates</string>
+    <string name="candidate_realcount">Candidate Realcount</string>
+    <string name="user_not_voted">User not voted</string>
+    <string name="user_deactivated">@string/user_has_deactivated</string>
+    <string name="golput" translatable="false">Golput</string>
+    <string name="user_registerred_intps">User registerred in TPS</string>
+    <string name="user_has_deactivated">User deactivated</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="others">Others</string>
+    <string name="wait">Wait for a few moments…</string>
+
+
+    <string name="dialog_force_logout_user">"Are you sure to force logout this user ?"</string>
+
+    <string name="comparison">%1$s from %2$s</string>
+    <string name="count_candidates">%1$s Registered Candidates</string>
+    <string name="user_voted">User has voted</string>
+    <string name="ongoing_activities">Ongoing Activities</string>
+
+    <string-array name="listitem_tps">
+        <item>Hello</item>
+        <item>World</item>
+    </string-array>
+
+
+
+</resources>

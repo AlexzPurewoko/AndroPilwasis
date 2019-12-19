@@ -1,0 +1,24 @@
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="oauthlogin_dimen_icon_marginTop">60dp</dimen>
+    <dimen name="oauthlogin_dimen_title_marginTop">15dp</dimen>
+    <dimen name="oauthlogin_dimen_title_textSize">36sp</dimen>
+    <dimen name="oauthlogin_dimen_username_marginELSR">36dp</dimen>
+    <dimen name="oauthlogin_dimen_username_marginTop">40dp</dimen>
+    <dimen name="oauthlogin_dimen_password_marginTop">16dp</dimen>
+    <dimen name="oauthlogin_dimen_loginbtn_marginTop">40dp</dimen>
+    <dimen name="oauthlogin_dimen_loading_marginTop">@dimen/oauthlogin_dimen_icon_marginTop</dimen>
+    <dimen name="oauthlogin_icon_hw">200dp</dimen>
+</resources>

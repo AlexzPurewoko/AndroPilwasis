@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/others_candidate_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_bg"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="3dp"
+                android:textColor="#ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1" />
+
+        <TextView
+                android:id="@+id/others_candidate_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toBottomOf="@+id/others_candidate_num"
+                app:layout_constraintStart_toEndOf="@+id/others_candidate_num"
+                app:layout_constraintTop_toTopOf="@+id/others_candidate_num"
+                tools:text="Anita Cahya Candraningsih" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/others_candidate_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@+id/others_candidate_num"
+                app:layout_constraintTop_toBottomOf="@+id/others_candidate_num"
+                tools:src="@drawable/ic_user" />
+
+
+        <TextView
+                android:id="@+id/others_candidate_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/others_candidate_image"
+                app:layout_constraintStart_toEndOf="@+id/others_candidate_image"
+                app:layout_constraintTop_toTopOf="@+id/others_candidate_image"
+                app:layout_constraintVertical_bias="0.3"
+                tools:text="Anita" />
+
+        <TextView
+                android:id="@+id/others_candidate_kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toBottomOf="@+id/others_candidate_image"
+                app:layout_constraintStart_toStartOf="@+id/others_candidate_nickname"
+                app:layout_constraintTop_toTopOf="@+id/others_candidate_image"
+                app:layout_constraintVertical_bias="0.62"
+                tools:text="XII TKJ 1" />
+
+        <TextView
+                android:id="@+id/others_visi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="Visi :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintStart_toStartOf="@+id/others_candidate_image"
+                app:layout_constraintTop_toBottomOf="@+id/others_candidate_image" />
+
+        <TextView
+                android:id="@+id/others_candidate_visi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/others_visi"
+                app:layout_constraintTop_toBottomOf="@+id/others_visi" />
+
+        <TextView
+                android:id="@+id/others_misi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="Misi : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintStart_toStartOf="@+id/others_candidate_visi"
+                app:layout_constraintTop_toBottomOf="@+id/others_candidate_visi" />
+
+        <TextView
+                android:id="@+id/others_candidate_misi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/others_misi"
+                app:layout_constraintTop_toBottomOf="@+id/others_misi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

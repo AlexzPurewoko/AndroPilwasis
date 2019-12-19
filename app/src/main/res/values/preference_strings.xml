@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<resources>
+    <string name="server_url_key" translatable="false">server_url</string>
+    <string name="server_url_title" translatable="false">Server Hostname</string>
+    <string name="server_url_desc">Configure the link of Server Hostname\'s</string>
+    <string name="server_url_def" translatable="false">apwdevs.000webhostapp.com</string>
+
+
+    <string name="server_timeout_milliseconds_key" translatable="false">server_timeout_milliseconds</string>
+    <string name="server_timeout_milliseconds_title">Timeout Connection</string>
+    <string name="server_timeout_milliseconds_desc">Configure the maximum time request connect into the server in milliseconds</string>
+    <string name="server_timeout_milliseconds_def" translatable="false">10000</string>
+
+    <string-array name="server_timeout_milliseconds_entries">
+        <item>5000 ms</item>
+        <item>10000 ms</item>
+        <item>15000 ms</item>
+        <item>20000 ms</item>
+    </string-array>
+    <string-array name="server_timeout_milliseconds_values">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+
+    <string name="server_protocol_key" translatable="false">server_protocol</string>
+    <string name="server_protocol_title">Protocol</string>
+    <string name="server_protocol_desc">Configure the protocol for used as connecting to the server</string>
+    <string name="server_protocol_def" translatable="false">https://</string>
+    <string-array name="server_protocol_entries">
+        <item>http</item>
+        <item>https</item>
+    </string-array>
+    <string-array name="server_protocol_values">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
+
+</resources>

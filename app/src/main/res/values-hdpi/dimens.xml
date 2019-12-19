@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright @2019 by Alexzander Purwoko Widiantoro <purwoko908@gmail.com>
+  ~ This prototype is used for testing, and educating about APIs
+  ~ @author APWDevs
+  ~
+  ~ Licensed under GNU GPLv3
+  ~
+  ~ This module is provided by "AS IS" and if you want to take
+  ~ a copy or modifying this module, you must include this @author
+  ~ Thanks! Happy Coding!
+  -->
+
+<resources>
+    <dimen name="oauthlogin_dimen_icon_marginTop">40dp</dimen>
+    <dimen name="oauthlogin_icon_hw">170dp</dimen>
+    <dimen name="oauthlogin_dimen_title_marginTop">12dp</dimen>
+    <dimen name="oauthlogin_dimen_title_textSize">30sp</dimen>
+    <dimen name="oauthlogin_dimen_username_marginELSR">36dp</dimen>
+    <dimen name="oauthlogin_dimen_username_marginTop">32dp</dimen>
+    <dimen name="oauthlogin_dimen_password_marginTop">16dp</dimen>
+    <dimen name="oauthlogin_dimen_loginbtn_marginTop">40dp</dimen>
+</resources>
